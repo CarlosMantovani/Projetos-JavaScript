@@ -1,0 +1,73 @@
+
+body{
+    background-color: #4e4e4e;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.container{
+    width: 400px;
+    padding: 0.9rem;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 2px black;
+}
+
+main.container h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #383838;
+}
+
+#operations{
+    text-align: right;
+}
+
+#previous-operation,
+#current-operation{
+    overflow-wrap: break-word;
+    padding: 0.7rem;
+    min-height: 1.6em;
+}
+
+#previous-operation{
+color: #777;
+}
+#current-operation{
+
+font-size: 2em;
+font-weight: 700;
+}
+
+#buttons-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#buttons-grid button{
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+    height: 5em;
+    font-size: 1rem;
+    background-color: rgba(48, 47, 47, 0.075);
+    cursor: pointer;
+}
+#buttons-grid button.number{
+    background-color: #fff;
+}
+#buttons-grid button:hover{
+    background-color: rgba(48, 47, 47, 0.178);
+    border-color: rgb(0, 0, 0);
+}
+#buttons-grid #btn{
+    grid-column: span 2;
+    background-color: rgba(0, 102, 255, 0.541);
+}
+#buttons-grid #btn:hover{
+    background-color: rgba(0, 102, 255, 0.637);
+}
